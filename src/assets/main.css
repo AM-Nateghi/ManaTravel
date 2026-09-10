@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-paper: #fbf9f5;
+    --card-paper: #ffffff;
+    --border-hairline: #e7e2d9;
+    --celadon-primary: #2d5a4c;
+    --celadon-surface: #e8efea;
+    --terracotta-primary: #c15c3d;
+    --terracotta-surface: #fdf0eb;
+    --stone-title: #1d1c1a;
+    --stone-body: #34322e;
+    --stone-caption: #7a756d;
+  }
+
+  body {
+    background-color: var(--bg-paper);
+    color: var(--stone-body);
+    font-family:
+      "Plus Jakarta Sans",
+      system-ui,
+      -apple-system,
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  .font-editorial {
+    font-family: "Playfair Display", Georgia, "Noto Serif SC", serif;
+  }
+}
+
+/* Yinzhang (Traditional Cinnabar Seal) Tactile Stamp */
+.seal-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #c15c3d;
+  color: #c15c3d;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 2px;
+  position: relative;
+  background: rgba(253, 240, 235, 0.4);
+}
+
+/* Hairline rule utility */
+.hairline-b {
+  border-bottom: 1px solid #e7e2d9;
+}
+.hairline-t {
+  border-top: 1px solid #e7e2d9;
+}
+.hairline {
+  border: 1px solid #e7e2d9;
+}
