@@ -28,7 +28,7 @@ import {
         <!-- Pillar 1 -->
         <div class="bg-paper-card border border-paper-border p-5 rounded-sharp space-y-3 shadow-editorial">
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
-            <PhForkKnife :size="22" weight="light" />
+            <PhForkKnife :size="22" weight="regular" />
           </div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             100% Certified Halal Dining
@@ -41,7 +41,7 @@ import {
         <!-- Pillar 2 -->
         <div class="bg-paper-card border border-paper-border p-5 rounded-sharp space-y-3 shadow-editorial">
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
-            <PhCompass :size="22" weight="light" />
+            <PhCompass :size="22" weight="regular" />
           </div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Daily Prayer Times & Masjids
@@ -54,7 +54,7 @@ import {
         <!-- Pillar 3 -->
         <div class="bg-paper-card border border-paper-border p-5 rounded-sharp space-y-3 shadow-editorial">
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
-            <PhHouseLine :size="22" weight="light" />
+            <PhHouseLine :size="22" weight="regular" />
           </div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Modest & Family Lodgings
@@ -67,7 +67,7 @@ import {
         <!-- Pillar 4 -->
         <div class="bg-paper-card border border-paper-border p-5 rounded-sharp space-y-3 shadow-editorial">
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
-            <PhUsersThree :size="22" weight="light" />
+            <PhUsersThree :size="22" weight="regular" />
           </div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Hui Community Fellowship

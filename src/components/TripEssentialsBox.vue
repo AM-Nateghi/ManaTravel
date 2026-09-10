@@ -28,18 +28,18 @@ const primaryBatch = computed(() => {
   >
     <div class="flex flex-wrap items-center justify-between gap-2 border-b border-paper-border pb-2.5">
       <div class="inline-flex items-center gap-1.5 font-semibold text-celadon tracking-wide uppercase text-xs">
-        <PhShieldCheck :size="18" weight="light" class="text-celadon shrink-0" />
+        <PhShieldCheck :size="20" weight="regular" class="text-celadon shrink-0" />
         <span>100% Halal Dining & Muslim-Led</span>
       </div>
       <Badge variant="terracotta" class="text-xs font-medium py-0.5 px-2">
-        <PhAirplaneTilt :size="14" weight="light" class="shrink-0" />
+        <PhAirplaneTilt :size="16" weight="regular" class="shrink-0" />
         <span>Ground Tour • Flights Self-Arranged</span>
       </Badge>
     </div>
 
     <div class="grid grid-cols-2 gap-3 pt-1">
       <div class="flex items-start gap-2">
-        <PhClock :size="18" weight="light" class="text-stone-caption mt-0.5 shrink-0" />
+        <PhClock :size="20" weight="regular" class="text-stone-caption mt-0.5 shrink-0" />
         <div>
           <div class="text-xs text-stone-caption uppercase font-semibold tracking-wider">Duration</div>
           <div class="text-xs sm:text-sm font-medium text-stone-title">{{ tour.durationDays }} Days / {{ tour.durationNights }} Nights</div>
@@ -47,7 +47,7 @@ const primaryBatch = computed(() => {
       </div>
 
       <div class="flex items-start gap-2">
-        <PhUsers :size="18" weight="light" class="text-stone-caption mt-0.5 shrink-0" />
+        <PhUsers :size="20" weight="regular" class="text-stone-caption mt-0.5 shrink-0" />
         <div>
           <div class="text-xs text-stone-caption uppercase font-semibold tracking-wider">Group Format</div>
           <div class="text-xs sm:text-sm font-medium text-stone-title">
@@ -57,7 +57,7 @@ const primaryBatch = computed(() => {
       </div>
 
       <div class="flex items-start gap-2 col-span-2 pt-1 border-t border-paper-border/60">
-        <PhTranslate :size="18" weight="light" class="text-stone-caption mt-0.5 shrink-0" />
+        <PhTranslate :size="20" weight="regular" class="text-stone-caption mt-0.5 shrink-0" />
         <div class="flex items-center justify-between w-full">
           <span class="text-xs text-stone-caption uppercase font-semibold tracking-wider">Host Guidance:</span>
           <span class="text-xs sm:text-sm font-medium text-stone-title">English & Chinese Fluent</span>

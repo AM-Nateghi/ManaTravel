@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Warm paper background -->
+  <rect width="64" height="64" rx="14" fill="#F5F0E8"/>
+  <!-- Thin border ring -->
+  <rect x="2" y="2" width="60" height="60" rx="12" stroke="#3D7A6B" stroke-width="1.5" fill="none"/>
+  <!-- Stylized M letterform using editorial serif proportions -->
+  <text
+    x="32"
+    y="47"
+    font-family="'Literata', 'Georgia', serif"
+    font-size="36"
+    font-weight="700"
+    text-anchor="middle"
+    fill="#3D7A6B"
+    letter-spacing="-1"
+  >M</text>
+</svg>

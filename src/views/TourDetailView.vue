@@ -56,7 +56,7 @@ function closeModal() {
           @click="router.push('/')"
           class="inline-flex items-center gap-1.5 text-xs font-semibold text-stone-caption hover:text-celadon transition-colors"
         >
-          <PhArrowLeft :size="16" weight="light" />
+          <PhArrowLeft :size="16" weight="regular" />
           <span>Back to All Expeditions</span>
         </button>
 
@@ -66,10 +66,10 @@ function closeModal() {
       </div>
 
       <!-- Hero Header Banner -->
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8 items-start">
         
         <!-- Left Title & Meta (8 cols) -->
-        <div class="lg:col-span-8 space-y-4">
+        <div class="md:col-span-7 lg:col-span-8 space-y-4">
           <div class="flex flex-wrap items-center gap-2">
             <span 
               class="text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-sharp border"
@@ -81,12 +81,12 @@ function closeModal() {
             </span>
 
             <span class="text-xs text-stone-caption font-medium flex items-center gap-1">
-              <PhMapPin :size="14" weight="light" class="text-celadon" />
+              <PhMapPin :size="15" weight="regular" class="text-celadon" />
               <span>{{ tour.destinations.join(' → ') }}</span>
             </span>
           </div>
 
-          <h1 class="font-editorial text-3xl sm:text-4xl lg:text-5xl font-semibold text-stone-title tracking-tight leading-tight">
+          <h1 class="font-editorial text-3xl sm:text-4xl md:text-3xl lg:text-5xl font-semibold text-stone-title tracking-tight leading-tight">
             {{ tour.title }}
           </h1>
 
@@ -99,13 +99,13 @@ function closeModal() {
             <img 
               :src="tour.heroImage" 
               :alt="tour.title" 
-              class="w-full h-72 sm:h-96 object-cover filter contrast-[1.02]"
+              class="w-full h-56 sm:h-72 md:h-64 lg:h-96 object-cover filter contrast-[1.02]"
             />
           </div>
         </div>
 
-        <!-- Right Sticky Booking Card (4 cols) -->
-        <div class="lg:col-span-4 sticky top-28 space-y-6">
+        <!-- Right Sticky Booking Card (4-5 cols) -->
+        <div class="md:col-span-5 lg:col-span-4 sticky top-28 space-y-6">
           <div class="bg-paper-card border border-paper-border p-6 rounded-sharp shadow-elevated space-y-5">
             <div>
               <div class="text-xs text-stone-caption uppercase font-semibold tracking-wider">Estimated Pricing</div>
@@ -125,12 +125,12 @@ function closeModal() {
                 @click="openModal()"
                 class="w-full py-3 bg-celadon text-white rounded-sharp text-sm font-semibold hover:bg-celadon-deep transition-colors shadow-sm inline-flex items-center justify-center gap-2"
               >
-                <PhChatCircleDots :size="18" weight="light" />
+                <PhChatCircleDots :size="18" weight="regular" />
                 <span>Initiate WhatsApp Handshake</span>
               </button>
 
               <div class="text-xs text-center text-stone-caption flex items-center justify-center gap-1.5">
-                <PhAirplaneTilt :size="15" weight="light" class="text-terracotta" />
+                <PhAirplaneTilt :size="15" weight="regular" class="text-terracotta" />
                 <span>Ground tour package. Flights self-arranged.</span>
               </div>
             </div>
@@ -193,7 +193,7 @@ function closeModal() {
             </div>
             <ul class="space-y-2 text-xs sm:text-sm text-stone-body">
               <li v-for="inc in tour.inclusions" :key="inc" class="flex items-start gap-2">
-                <PhCheck :size="16" weight="light" class="text-celadon shrink-0 mt-0.5" />
+                <PhCheck :size="16" weight="regular" class="text-celadon shrink-0 mt-0.5" />
                 <span>{{ inc }}</span>
               </li>
             </ul>
@@ -207,7 +207,7 @@ function closeModal() {
             </div>
             <ul class="space-y-2 text-xs sm:text-sm text-stone-body">
               <li v-for="exc in tour.exclusions" :key="exc" class="flex items-start gap-2">
-                <PhX :size="16" weight="light" class="text-terracotta shrink-0 mt-0.5" />
+                <PhX :size="16" weight="regular" class="text-terracotta shrink-0 mt-0.5" />
                 <span>{{ exc }}</span>
               </li>
             </ul>
@@ -254,7 +254,7 @@ function closeModal() {
             <!-- Accommodation & Meals Indicators -->
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs bg-paper-subtle/50 p-3 rounded-sharp border border-paper-border">
               <div class="flex items-center gap-2">
-                <PhForkKnife :size="16" weight="light" class="text-celadon shrink-0" />
+                <PhForkKnife :size="18" weight="regular" class="text-celadon shrink-0" />
                 <span>
                   <strong>Halal Meals:</strong> 
                   {{ day.mealsIncluded.breakfast ? 'Breakfast (Included)' : 'Breakfast (Self)' }}, 
@@ -264,7 +264,7 @@ function closeModal() {
               </div>
 
               <div class="flex items-center gap-2">
-                <PhBed :size="16" weight="light" class="text-stone-caption shrink-0" />
+                <PhBed :size="18" weight="regular" class="text-stone-caption shrink-0" />
                 <span>
                   <strong>Lodging:</strong> {{ day.accommodation }}
                 </span>
@@ -324,7 +324,7 @@ function closeModal() {
     <!-- IF TOUR NOT FOUND -->
     <div v-else class="max-w-2xl mx-auto px-4 text-center py-20 space-y-6">
       <div class="w-16 h-16 rounded-full bg-terracotta-surface text-terracotta mx-auto flex items-center justify-center border border-terracotta-border">
-        <PhWarningCircle :size="32" weight="light" />
+        <PhWarningCircle :size="32" weight="regular" />
       </div>
       <h1 class="font-editorial text-2xl font-bold text-stone-title">
         Expedition Package Not Found
@@ -337,7 +337,7 @@ function closeModal() {
           to="/"
           class="px-6 py-2.5 bg-celadon text-white text-xs font-semibold rounded-sharp hover:bg-celadon-deep transition-colors inline-flex items-center gap-2"
         >
-          <PhArrowLeft :size="16" weight="light" />
+          <PhArrowLeft :size="16" weight="regular" />
           <span>Return to All Expeditions</span>
         </router-link>
       </div>

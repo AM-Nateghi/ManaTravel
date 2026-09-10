@@ -51,7 +51,7 @@ defineEmits<{
           :key="dest"
           class="inline-flex items-center gap-1 bg-paper-card/95 backdrop-blur-md text-stone-title text-xs font-medium px-2.5 py-1 rounded-sharp border border-paper-border/80 shadow-sm"
         >
-          <PhMapPin :size="12" weight="light" class="text-celadon shrink-0" />
+          <PhMapPin :size="13" weight="regular" class="text-celadon shrink-0" />
           <span>{{ dest }}</span>
         </span>
       </div>
@@ -85,7 +85,7 @@ defineEmits<{
           <router-link :to="`/tours/${tour.slug}`" class="flex-1 sm:flex-initial">
             <Button variant="outline" size="sm" class="w-full sm:w-auto text-xs sm:text-sm">
               <span>Itinerary</span>
-              <PhArrowRight :size="14" weight="light" />
+              <PhArrowRight :size="14" weight="regular" />
             </Button>
           </router-link>
 
@@ -96,7 +96,7 @@ defineEmits<{
             class="flex-1 sm:flex-initial text-xs sm:text-sm"
             @click="$emit('inquire', tour)"
           >
-            <PhChatCircleDots :size="15" weight="light" />
+            <PhChatCircleDots :size="15" weight="regular" />
             <span>Inquire</span>
           </Button>
         </div>

@@ -119,7 +119,7 @@ function scrollToSection(selector: string) {
           @click="scrollToSection('#expeditions')"
           class="hidden xl:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-sharp border border-celadon text-celadon text-xs font-semibold hover:bg-celadon hover:text-white transition-colors whitespace-nowrap"
         >
-          <PhCompass :size="15" weight="light" />
+          <PhCompass :size="15" weight="regular" />
           <span>Browse Batches</span>
         </button>
 
@@ -129,7 +129,7 @@ function scrollToSection(selector: string) {
           rel="noopener noreferrer"
           class="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 rounded-sharp bg-celadon text-white text-xs font-semibold hover:bg-celadon-deep transition-colors shadow-sm shrink-0 whitespace-nowrap"
         >
-          <PhChatCircleDots :size="15" weight="light" />
+          <PhChatCircleDots :size="15" weight="regular" />
           <span class="hidden sm:inline">Ask Ma & Viona</span>
           <span class="inline sm:hidden">WhatsApp</span>
         </a>
@@ -140,8 +140,8 @@ function scrollToSection(selector: string) {
           class="lg:hidden p-2 text-stone-title rounded-sharp hover:bg-paper-border/40 transition-colors"
           aria-label="Toggle navigation menu"
         >
-          <PhX v-if="isMobileMenuOpen" :size="22" weight="light" />
-          <PhList v-else :size="22" weight="light" />
+          <PhX v-if="isMobileMenuOpen" :size="22" weight="regular" />
+          <PhList v-else :size="22" weight="regular" />
         </button>
       </div>
     </div>
