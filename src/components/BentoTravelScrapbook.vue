@@ -35,16 +35,16 @@ import {
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               loading="lazy"
             />
-            <div class="absolute top-3 left-3 bg-paper-card/90 backdrop-blur-sm text-stone-title border border-paper-border text-[11px] font-semibold px-2.5 py-1 rounded-sharp">
+            <div class="absolute top-3 left-3 bg-paper-card/90 backdrop-blur-sm text-stone-title border border-paper-border text-xs font-semibold px-2.5 py-1 rounded-sharp">
               FIELD PHOTOGRAPH • WEISHAN BANQUET
             </div>
           </div>
           <div class="pt-4 flex items-center justify-between">
             <div>
               <div class="font-editorial text-base font-semibold text-stone-title">Hui Village Traditional Banquet</div>
-              <div class="text-xs text-stone-caption">Shared table with 12 dishes, Yunnan beef brisket, and freshly baked Hui pita</div>
+              <div class="text-xs text-stone-caption mt-0.5">Shared table with 12 dishes, Yunnan beef brisket, and freshly baked Hui pita</div>
             </div>
-            <span class="seal-stamp text-[10px]">100% HALAL</span>
+            <span class="seal-stamp text-xs">100% HALAL</span>
           </div>
         </div>
 
@@ -52,11 +52,11 @@ import {
         <div class="md:col-span-5 bg-paper-card border border-paper-border rounded-sharp p-6 shadow-editorial flex flex-col justify-between space-y-4">
           <div class="space-y-3">
             <div class="flex items-center justify-between">
-              <span class="text-[11px] font-semibold tracking-wider text-celadon uppercase flex items-center gap-1">
+              <span class="text-xs font-semibold tracking-wider text-celadon uppercase flex items-center gap-1">
                 <PhQuotes :size="16" weight="light" />
                 <span>Traveler Reflection</span>
               </span>
-              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-celadon-surface text-celadon border border-celadon-border">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-celadon-surface text-celadon border border-celadon-border">
                 SINGAPORE (SIN)
               </span>
             </div>
@@ -69,7 +69,7 @@ import {
           <div class="pt-4 border-t border-paper-border flex items-center justify-between text-xs">
             <div>
               <div class="font-semibold text-stone-title">Brother Zam & Family</div>
-              <div class="text-stone-caption text-[11px]">Yunnan 8D7N Cultural Route</div>
+              <div class="text-stone-caption text-xs mt-0.5">Yunnan 8D7N Cultural Route</div>
             </div>
             <div class="flex items-center gap-1 text-celadon text-xs">
               <PhCheckCircle :size="16" weight="fill" />
@@ -81,7 +81,7 @@ import {
         <!-- Cell 3: Passport Entry Stamp & Transit Artifact (5 cols) -->
         <div class="md:col-span-5 bg-paper-card border border-dashed border-terracotta-border/80 rounded-sharp p-6 shadow-editorial flex flex-col justify-between relative overflow-hidden bg-terracotta-surface/20">
           <div class="space-y-2">
-            <div class="text-[11px] font-semibold text-terracotta tracking-wider uppercase flex items-center gap-1.5">
+            <div class="text-xs font-semibold text-terracotta tracking-wider uppercase flex items-center gap-1.5">
               <PhAirplaneTakeoff :size="16" weight="light" />
               <span>Gateway Entry</span>
             </div>
@@ -95,9 +95,9 @@ import {
 
           <!-- Stylized Chop Seal Stamp Graphic -->
           <div class="mt-6 border-2 border-terracotta/70 p-3 rounded-sharp text-terracotta inline-block max-w-[240px] text-center rotate-[-2deg]">
-            <div class="text-[10px] tracking-widest font-mono font-bold uppercase">ENTRY PASSPORT VERIFIED</div>
+            <div class="text-xs tracking-widest font-mono font-bold uppercase">ENTRY PASSPORT VERIFIED</div>
             <div class="text-xs font-editorial font-bold my-0.5">MANA CULTURAL EXPEDITION</div>
-            <div class="text-[9px] font-mono">YUNNAN • P.R. CHINA</div>
+            <div class="text-xs font-mono">YUNNAN • P.R. CHINA</div>
           </div>
         </div>
 
@@ -123,10 +123,10 @@ import {
               </div>
               <div>
                 <div class="font-semibold text-stone-title">Yusuf Ma & Ayesha Viona</div>
-                <div class="text-[11px] text-stone-caption">Mana Travel Founders • Kunming, China</div>
+                <div class="text-xs text-stone-caption mt-0.5">Mana Travel Founders • Kunming, China</div>
               </div>
             </div>
-            <span class="seal-stamp text-[10px]">VERIFIED HOST</span>
+            <span class="seal-stamp text-xs">VERIFIED HOST</span>
           </div>
         </div>
 

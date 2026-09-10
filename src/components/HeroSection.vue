@@ -26,9 +26,10 @@ defineEmits<{
             <span class="seal-stamp">
               云南回族 • YUNNAN HUI HERITAGE
             </span>
-            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-terracotta-surface text-terracotta border border-terracotta-border">
-              <PhAirplaneTilt :size="14" weight="light" />
-              <span>Ground Tours • International Flights Self-Arranged</span>
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-terracotta-surface text-terracotta border border-terracotta-border max-w-full">
+              <PhAirplaneTilt :size="14" weight="light" class="shrink-0" />
+              <span class="hidden sm:inline">Ground Tours • International Flights Self-Arranged</span>
+              <span class="inline sm:hidden">Ground Tours • Flights Self-Arranged</span>
             </span>
           </div>
 
@@ -46,36 +47,36 @@ defineEmits<{
 
           <!-- Core Value Proposition Badges -->
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
-            <div class="border border-paper-border bg-paper-card p-3 rounded-sharp flex items-start gap-2.5 shadow-sm">
+            <div class="border border-paper-border bg-paper-card p-3.5 rounded-sharp flex items-start gap-2.5 shadow-sm">
               <PhShieldCheck :size="20" weight="light" class="text-celadon shrink-0 mt-0.5" />
               <div>
                 <div class="text-xs font-semibold text-stone-title">100% Halal Integrity</div>
-                <div class="text-[11px] text-stone-caption">Every meal certified Muslim dining</div>
+                <div class="text-xs text-stone-caption mt-0.5">Every meal certified Muslim dining</div>
               </div>
             </div>
 
-            <div class="border border-paper-border bg-paper-card p-3 rounded-sharp flex items-start gap-2.5 shadow-sm">
+            <div class="border border-paper-border bg-paper-card p-3.5 rounded-sharp flex items-start gap-2.5 shadow-sm">
               <PhUsersThree :size="20" weight="light" class="text-celadon shrink-0 mt-0.5" />
               <div>
                 <div class="text-xs font-semibold text-stone-title">Small Groups</div>
-                <div class="text-[11px] text-stone-caption">8 to 14 travelers max per batch</div>
+                <div class="text-xs text-stone-caption mt-0.5">8 to 14 travelers max per batch</div>
               </div>
             </div>
 
-            <div class="border border-paper-border bg-paper-card p-3 rounded-sharp flex items-start gap-2.5 shadow-sm">
+            <div class="border border-paper-border bg-paper-card p-3.5 rounded-sharp flex items-start gap-2.5 shadow-sm">
               <PhTranslate :size="20" weight="light" class="text-celadon shrink-0 mt-0.5" />
               <div>
                 <div class="text-xs font-semibold text-stone-title">Native Hosts</div>
-                <div class="text-[11px] text-stone-caption">English & Chinese guidance</div>
+                <div class="text-xs text-stone-caption mt-0.5">English & Chinese guidance</div>
               </div>
             </div>
           </div>
 
           <!-- CTAs -->
-          <div class="flex flex-wrap items-center gap-3 pt-2">
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
             <a 
               href="#expeditions" 
-              class="px-6 py-3 rounded-sharp bg-celadon text-white text-xs sm:text-sm font-semibold hover:bg-celadon-deep transition-all shadow-sm inline-flex items-center gap-2"
+              class="px-6 py-3.5 rounded-sharp bg-celadon text-white text-xs sm:text-sm font-semibold hover:bg-celadon-deep transition-all shadow-sm inline-flex items-center justify-center gap-2 text-center"
             >
               <span>Explore 2026-2027 Departures</span>
               <PhArrowDown :size="16" weight="light" />
@@ -85,7 +86,7 @@ defineEmits<{
               href="https://api.whatsapp.com/send?phone=8618487728484&text=Salam%20Ma%20%26%20Viona!%20I%20saw%20your%20YouTube%20videos%20and%20would%20love%20to%20learn%20more%20about%20your%20upcoming%20Yunnan%20Muslim%20tours."
               target="_blank"
               rel="noopener noreferrer"
-              class="px-5 py-3 rounded-sharp border border-celadon bg-paper text-celadon text-xs sm:text-sm font-semibold hover:bg-celadon-surface/50 transition-all inline-flex items-center gap-2"
+              class="px-5 py-3.5 rounded-sharp border border-celadon bg-paper text-celadon text-xs sm:text-sm font-semibold hover:bg-celadon-surface/50 transition-all inline-flex items-center justify-center gap-2 text-center"
             >
               <PhChatCircleDots :size="16" weight="light" />
               <span>Direct WhatsApp Inquiry</span>
@@ -113,10 +114,10 @@ defineEmits<{
               />
               <div class="p-3 bg-paper-card flex items-center justify-between border-t border-paper-border mt-2">
                 <div>
-                  <div class="text-xs font-semibold text-stone-title">Yusuf Ma & Ayesha Viona</div>
-                  <div class="text-[11px] text-stone-caption">Founders & Lead Cultural Expedition Hosts</div>
+                  <div class="text-xs sm:text-sm font-semibold text-stone-title">Yusuf Ma & Ayesha Viona</div>
+                  <div class="text-xs text-stone-caption mt-0.5">Founders & Lead Cultural Expedition Hosts</div>
                 </div>
-                <div class="seal-stamp text-[10px]">
+                <div class="seal-stamp text-xs">
                   LOCAL HOSTS
                 </div>
               </div>
@@ -124,11 +125,11 @@ defineEmits<{
 
             <!-- Floating Badge: Halal Peace of Mind -->
             <div class="absolute -bottom-4 -left-4 sm:-left-6 bg-paper-card border border-paper-border p-3 rounded-sharp shadow-editorial max-w-[220px] hidden sm:block">
-              <div class="text-[11px] font-semibold text-celadon uppercase tracking-wide flex items-center gap-1">
+              <div class="text-xs font-semibold text-celadon uppercase tracking-wide flex items-center gap-1">
                 <PhShieldCheck :size="16" weight="bold" />
                 <span>Zero Compromise</span>
               </div>
-              <p class="text-[11px] text-stone-caption mt-1 leading-snug">
+              <p class="text-xs text-stone-caption mt-1 leading-snug">
                 Every restaurant personally audited by brother Ma. Prayer facilities pre-arranged at local masjids.
               </p>
             </div>

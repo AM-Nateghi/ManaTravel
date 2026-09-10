@@ -30,11 +30,11 @@ import {
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
             <PhAirplaneTilt :size="20" weight="light" />
           </div>
-          <div class="text-[11px] font-semibold text-terracotta uppercase tracking-wider">Gateway 01</div>
+          <div class="text-xs font-semibold text-terracotta uppercase tracking-wider">Gateway 01</div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Fly Direct to Kunming (KMG)
           </h3>
-          <p class="text-xs text-stone-caption leading-relaxed">
+          <p class="text-xs sm:text-sm text-stone-caption leading-relaxed">
             Your destination airport is <strong>Kunming Changshui International Airport (KMG)</strong>. Most expeditions start and conclude right in Kunming.
           </p>
         </div>
@@ -44,11 +44,11 @@ import {
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
             <PhCompass :size="20" weight="light" />
           </div>
-          <div class="text-[11px] font-semibold text-terracotta uppercase tracking-wider">Gateway 02</div>
+          <div class="text-xs font-semibold text-terracotta uppercase tracking-wider">Gateway 02</div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Popular Connecting Hubs
           </h3>
-          <p class="text-xs text-stone-caption leading-relaxed">
+          <p class="text-xs sm:text-sm text-stone-caption leading-relaxed">
             Direct 3-4 hr flights run daily from <strong>Kuala Lumpur (KUL)</strong>, <strong>Bangkok (BKK/DMK)</strong>, <strong>Singapore (SIN)</strong>, and <strong>Guangzhou (CAN)</strong>.
           </p>
         </div>
@@ -58,11 +58,11 @@ import {
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
             <PhIdentificationCard :size="20" weight="light" />
           </div>
-          <div class="text-[11px] font-semibold text-terracotta uppercase tracking-wider">Gateway 03</div>
+          <div class="text-xs font-semibold text-terracotta uppercase tracking-wider">Gateway 03</div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Visa-Free Policies
           </h3>
-          <p class="text-xs text-stone-caption leading-relaxed">
+          <p class="text-xs sm:text-sm text-stone-caption leading-relaxed">
             Passport holders from Malaysia, Singapore, and many European nations now enjoy <strong>15 to 30 days visa-free entry</strong>. For other passports, we issue official invitation letters.
           </p>
         </div>
@@ -72,11 +72,11 @@ import {
           <div class="w-10 h-10 rounded-sharp bg-celadon-surface flex items-center justify-center text-celadon border border-celadon-border">
             <PhTrain :size="20" weight="light" />
           </div>
-          <div class="text-[11px] font-semibold text-terracotta uppercase tracking-wider">Gateway 04</div>
+          <div class="text-xs font-semibold text-terracotta uppercase tracking-wider">Gateway 04</div>
           <h3 class="font-editorial text-base font-semibold text-stone-title">
             Airport Meet & Domestic Rails
           </h3>
-          <p class="text-xs text-stone-caption leading-relaxed">
+          <p class="text-xs sm:text-sm text-stone-caption leading-relaxed">
             Brother Ma meets you directly at KMG arrival gates. All intra-Yunnan bullet trains and luxury private coaches are arranged and covered.
           </p>
         </div>

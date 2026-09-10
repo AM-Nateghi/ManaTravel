@@ -10,7 +10,7 @@ import { PhCompass, PhArrowLeft } from '@phosphor-icons/vue';
       </div>
 
       <div class="space-y-2">
-        <span class="seal-stamp text-[10px]">PAGE NOT FOUND</span>
+        <span class="seal-stamp text-xs">PAGE NOT FOUND</span>
         <h1 class="font-editorial text-2xl font-bold text-stone-title">
           Off the Beaten Trail
         </h1>

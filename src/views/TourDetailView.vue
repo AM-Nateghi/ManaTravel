@@ -45,7 +45,7 @@ function closeModal() {
 </script>
 
 <template>
-  <div class="min-h-screen pt-20 sm:pt-24 pb-20 bg-paper">
+  <div class="min-h-screen pt-20 sm:pt-24 pb-20 bg-paper max-w-full overflow-x-hidden">
     
     <!-- IF TOUR FOUND -->
     <div v-if="tour" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-10">
@@ -61,7 +61,7 @@ function closeModal() {
         </button>
 
         <div class="flex items-center gap-2">
-          <span class="seal-stamp text-[10px]">VERIFIED GROUND ROUTE</span>
+          <span class="seal-stamp">VERIFIED GROUND ROUTE</span>
         </div>
       </div>
 
@@ -108,10 +108,10 @@ function closeModal() {
         <div class="lg:col-span-4 sticky top-28 space-y-6">
           <div class="bg-paper-card border border-paper-border p-6 rounded-sharp shadow-elevated space-y-5">
             <div>
-              <div class="text-[11px] text-stone-caption uppercase font-medium">Estimated Pricing</div>
-              <div class="font-editorial text-2xl font-bold text-stone-title">
-                {{ tour.priceIndication.currency }} ${{ tour.priceIndication.amount }}
-                <span class="text-xs font-sans font-normal text-stone-caption">/ {{ tour.priceIndication.note }}</span>
+              <div class="text-xs text-stone-caption uppercase font-semibold tracking-wider">Estimated Pricing</div>
+              <div class="font-editorial text-2xl sm:text-3xl font-bold text-stone-title flex items-baseline gap-1 mt-0.5">
+                <span class="text-celadon font-bold">¥{{ tour.priceIndication.amount.toLocaleString() }}</span>
+                <span class="text-xs sm:text-sm font-sans font-normal text-stone-caption">{{ tour.priceIndication.currency }} / {{ tour.priceIndication.note }}</span>
               </div>
             </div>
 
@@ -123,49 +123,49 @@ function closeModal() {
               <button 
                 type="button"
                 @click="openModal()"
-                class="w-full py-3 bg-celadon text-white rounded-sharp text-xs sm:text-sm font-semibold hover:bg-celadon-deep transition-colors shadow-sm inline-flex items-center justify-center gap-2"
+                class="w-full py-3 bg-celadon text-white rounded-sharp text-sm font-semibold hover:bg-celadon-deep transition-colors shadow-sm inline-flex items-center justify-center gap-2"
               >
                 <PhChatCircleDots :size="18" weight="light" />
                 <span>Initiate WhatsApp Handshake</span>
               </button>
 
-              <div class="text-[11px] text-center text-stone-caption flex items-center justify-center gap-1">
-                <PhAirplaneTilt :size="14" weight="light" class="text-terracotta" />
+              <div class="text-xs text-center text-stone-caption flex items-center justify-center gap-1.5">
+                <PhAirplaneTilt :size="15" weight="light" class="text-terracotta" />
                 <span>Ground tour package. Flights self-arranged.</span>
               </div>
             </div>
 
             <!-- Available Batches Quick List (For Scheduled) -->
             <div v-if="tour.tourType === 'scheduled' && tour.batches.length > 0" class="border-t border-paper-border pt-4 space-y-2.5">
-              <div class="text-[11px] font-semibold text-stone-title uppercase tracking-wider">
+              <div class="text-xs font-semibold text-stone-title uppercase tracking-wider">
                 Select Departure Batch:
               </div>
               <div 
                 v-for="batch in tour.batches" 
                 :key="batch.id"
                 @click="openModal(batch.id)"
-                class="border border-paper-border p-2.5 rounded-sharp hover:border-celadon cursor-pointer transition-colors flex items-center justify-between text-xs bg-paper/50"
+                class="border border-paper-border p-3 rounded-sharp hover:border-celadon cursor-pointer transition-colors flex items-center justify-between text-xs bg-paper/50"
               >
                 <div>
-                  <div class="font-medium text-stone-title">{{ batch.displayDates }}</div>
-                  <div class="text-[10px] text-stone-caption">{{ tour.durationDays }} Days</div>
+                  <div class="font-medium text-stone-title text-xs sm:text-sm">{{ batch.displayDates }}</div>
+                  <div class="text-xs text-stone-caption">{{ tour.durationDays }} Days</div>
                 </div>
                 <div>
                   <span 
                     v-if="batch.status === 'limited'" 
-                    class="text-[10px] font-medium text-terracotta bg-terracotta-surface border border-terracotta-border px-2 py-0.5 rounded-full"
+                    class="text-xs font-medium text-terracotta bg-terracotta-surface border border-terracotta-border px-2.5 py-0.5 rounded-full"
                   >
                     {{ batch.availableSeats }} seats left
                   </span>
                   <span 
                     v-else-if="batch.status === 'open'" 
-                    class="text-[10px] font-medium text-celadon bg-celadon-surface border border-celadon-border px-2 py-0.5 rounded-full"
+                    class="text-xs font-medium text-celadon bg-celadon-surface border border-celadon-border px-2.5 py-0.5 rounded-full"
                   >
                     Available
                   </span>
                   <span 
                     v-else 
-                    class="text-[10px] font-medium text-stone-caption bg-paper-border px-2 py-0.5 rounded-full"
+                    class="text-xs font-medium text-stone-caption bg-paper-border px-2.5 py-0.5 rounded-full"
                   >
                     Sold Out
                   </span>
@@ -273,7 +273,7 @@ function closeModal() {
 
             <!-- Daily Highlights -->
             <div v-if="day.highlights && day.highlights.length > 0" class="space-y-2">
-              <div class="text-[11px] font-semibold uppercase text-stone-caption tracking-wider">
+              <div class="text-xs font-semibold uppercase text-stone-caption tracking-wider">
                 Key Cultural Highlights:
               </div>
               <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-stone-body">

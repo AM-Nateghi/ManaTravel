@@ -34,11 +34,11 @@ import {
           <div class="grid grid-cols-2 gap-3 text-center text-xs">
             <div class="p-3 bg-paper-card border border-paper-border rounded-sharp shadow-sm">
               <div class="font-editorial text-lg font-bold text-celadon">700+ Years</div>
-              <div class="text-stone-caption text-[11px] mt-0.5">Hui Muslim Heritage in Yunnan</div>
+              <div class="text-stone-caption text-xs mt-0.5">Hui Muslim Heritage in Yunnan</div>
             </div>
             <div class="p-3 bg-paper-card border border-paper-border rounded-sharp shadow-sm">
               <div class="font-editorial text-lg font-bold text-terracotta">100% Native</div>
-              <div class="text-stone-caption text-[11px] mt-0.5">Community-Rooted Operations</div>
+              <div class="text-stone-caption text-xs mt-0.5">Community-Rooted Operations</div>
             </div>
           </div>
         </div>

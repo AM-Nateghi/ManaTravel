@@ -44,14 +44,14 @@ const stories = ref(GUEST_STORIES);
                 </span>
                 <div>
                   <div class="text-sm font-semibold text-stone-title">{{ story.guestName }}</div>
-                  <div class="text-[11px] text-stone-caption flex items-center gap-1">
-                    <PhMapPin :size="12" weight="light" />
+                  <div class="text-xs text-stone-caption flex items-center gap-1 mt-0.5">
+                    <PhMapPin :size="13" weight="light" class="text-celadon" />
                     <span>{{ story.originCountry }}</span>
                   </div>
                 </div>
               </div>
 
-              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-paper-subtle border border-paper-border text-stone-caption">
+              <span class="text-xs font-semibold px-2.5 py-0.5 rounded-full bg-paper-subtle border border-paper-border text-stone-caption">
                 {{ story.countryCode }}
               </span>
             </div>
@@ -65,15 +65,15 @@ const stories = ref(GUEST_STORIES);
             </div>
 
             <!-- Narrative Extract -->
-            <p class="text-xs text-stone-caption leading-relaxed line-clamp-4">
+            <p class="text-xs sm:text-sm text-stone-caption leading-relaxed line-clamp-4">
               {{ story.fullNarrative }}
             </p>
           </div>
 
           <!-- Bottom Footer Details -->
           <div class="pt-4 border-t border-paper-border flex items-center justify-between text-xs">
-            <div class="flex items-center gap-1.5 text-stone-caption text-[11px]">
-              <PhUsers :size="14" weight="light" />
+            <div class="flex items-center gap-1.5 text-stone-caption text-xs">
+              <PhUsers :size="15" weight="light" />
               <span>{{ story.partyComposition }}</span>
             </div>
 

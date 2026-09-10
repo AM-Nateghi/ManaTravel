@@ -132,8 +132,8 @@ function handleOpenUpdate(val: boolean) {
       <!-- Modal Header -->
       <DialogHeader class="px-6 py-4 bg-paper hairline-b space-y-1">
         <div class="flex items-center gap-2">
-          <Badge variant="seal" class="text-[10px] py-0 px-1">INQUIRY HANDSHAKE</Badge>
-          <span class="text-[11px] font-semibold text-terracotta uppercase tracking-wider">
+          <Badge variant="seal" class="text-xs py-0.5 px-1.5">INQUIRY HANDSHAKE</Badge>
+          <span class="text-xs font-semibold text-terracotta uppercase tracking-wider">
             Step {{ currentStep }} of 3
           </span>
         </div>
@@ -186,7 +186,7 @@ function handleOpenUpdate(val: boolean) {
                 </div>
                 <div>
                   <div class="font-medium text-sm text-stone-title">{{ batch.displayDates }}</div>
-                  <div class="text-[11px] text-stone-caption">{{ tour.durationDays }} Days Ground Expedition</div>
+                  <div class="text-xs text-stone-caption mt-0.5">{{ tour.durationDays }} Days Ground Expedition</div>
                 </div>
               </div>
 
@@ -194,18 +194,20 @@ function handleOpenUpdate(val: boolean) {
                 <Badge 
                   v-if="batch.status === 'limited'" 
                   variant="terracotta"
+                  class="text-xs"
                 >
                   {{ batch.availableSeats }} seats left
                 </Badge>
                 <Badge 
                   v-else-if="batch.status === 'open'" 
                   variant="secondary"
+                  class="text-xs"
                 >
                   Available
                 </Badge>
                 <span 
                   v-else 
-                  class="text-[11px] font-medium text-stone-caption bg-paper-border px-2 py-0.5 rounded-full"
+                  class="text-xs font-medium text-stone-caption bg-paper-border px-2.5 py-0.5 rounded-full"
                 >
                   Waitlist Only
                 </span>
@@ -294,7 +296,7 @@ function handleOpenUpdate(val: boolean) {
                 required
               />
             </div>
-            <p class="text-[11px] text-stone-caption mt-1">
+            <p class="text-xs text-stone-caption mt-1">
               Helps brother Ma advise you on the best connecting flights into Kunming (KMG).
             </p>
           </div>
@@ -326,7 +328,7 @@ function handleOpenUpdate(val: boolean) {
 
           <!-- Compiled Handshake Preview -->
           <div>
-            <span class="text-[11px] font-semibold uppercase text-stone-caption tracking-wider block mb-1">
+            <span class="text-xs font-semibold uppercase text-stone-caption tracking-wider block mb-1">
               Pre-Qualified WhatsApp Message Preview
             </span>
             <div class="bg-paper border border-paper-border p-3 rounded-sharp text-xs font-mono text-stone-title whitespace-pre-line leading-relaxed max-h-36 overflow-y-auto">

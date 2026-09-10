@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Noto+Serif+SC:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400;1,7..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=Noto+Serif+SC:wght@400;600&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -18,6 +18,7 @@
     --stone-caption: #7a756d;
   }
 
+  html,
   body {
     background-color: var(--bg-paper);
     color: var(--stone-body);
@@ -29,31 +30,40 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  #app {
+    overflow-x: hidden;
+    max-width: 100%;
+    width: 100%;
   }
 
   h1,
   h2,
   h3,
   .font-editorial {
-    font-family: "Playfair Display", Georgia, "Noto Serif SC", serif;
+    font-family: "Literata", "Source Serif 4", "Noto Serif SC", serif;
   }
 }
 
-/* Yinzhang (Traditional Cinnabar Seal) Tactile Stamp */
+/* Yinzhang (Traditional Cinnabar Seal) Tactile Stamp - Accessible Minimum Sizing */
 .seal-stamp {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   border: 1.5px solid #c15c3d;
   color: #c15c3d;
-  padding: 2px 6px;
-  font-size: 0.75rem;
-  letter-spacing: 0.05em;
+  padding: 3px 8px;
+  font-size: 0.75rem; /* 12px minimum */
+  line-height: 1.1;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 2px;
   position: relative;
-  background: rgba(253, 240, 235, 0.4);
+  background: rgba(253, 240, 235, 0.5);
 }
 
 /* Hairline rule utility */

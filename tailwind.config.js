@@ -33,7 +33,7 @@ export default {
         },
       },
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', '"Noto Serif"', 'serif'],
+        serif: ['"Literata"', '"Source Serif 4"', '"Noto Serif SC"', 'serif'],
         sans: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
       },
       borderRadius: {

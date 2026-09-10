@@ -20,37 +20,41 @@ function handleChange(val: string | number) {
 </script>
 
 <template>
-  <Tabs :model-value="modelValue" @update:model-value="handleChange" class="w-auto">
-    <TabsList class="p-1 h-auto bg-paper-border/60 border border-paper-border rounded-sharp shadow-inner">
-      <TabsTrigger 
-        value="scheduled"
-        class="px-4 sm:px-6 py-2 rounded-sharp text-xs sm:text-sm font-medium transition-all flex items-center gap-2"
-      >
-        <PhUsersThree :size="18" weight="light" :class="modelValue === 'scheduled' ? 'text-celadon' : ''" />
-        <span>Scheduled Group Expeditions</span>
-        <Badge 
-          v-if="scheduledCount !== undefined" 
-          variant="secondary"
-          class="ml-1 text-[11px] py-0 px-2"
+  <div class="w-full sm:w-auto">
+    <Tabs :model-value="modelValue" @update:model-value="handleChange" class="w-full sm:w-auto">
+      <TabsList class="grid grid-cols-2 sm:flex sm:flex-row w-full sm:w-auto p-1 h-auto bg-paper-border/60 border border-paper-border rounded-sharp shadow-inner gap-1">
+        <TabsTrigger 
+          value="scheduled"
+          class="w-full sm:w-auto px-2.5 sm:px-5 py-2.5 rounded-sharp text-xs sm:text-sm font-medium transition-all flex items-center justify-center gap-1.5 text-center"
         >
-          {{ scheduledCount }}
-        </Badge>
-      </TabsTrigger>
+          <PhUsersThree :size="17" weight="light" class="shrink-0" :class="modelValue === 'scheduled' ? 'text-celadon' : ''" />
+          <span class="hidden sm:inline">Scheduled Group Expeditions</span>
+          <span class="inline sm:hidden">Scheduled ({{ scheduledCount }})</span>
+          <Badge 
+            v-if="scheduledCount !== undefined" 
+            variant="secondary"
+            class="hidden sm:inline-flex ml-1 text-xs py-0 px-2"
+          >
+            {{ scheduledCount }}
+          </Badge>
+        </TabsTrigger>
 
-      <TabsTrigger 
-        value="private"
-        class="px-4 sm:px-6 py-2 rounded-sharp text-xs sm:text-sm font-medium transition-all flex items-center gap-2"
-      >
-        <PhHouseLine :size="18" weight="light" :class="modelValue === 'private' ? 'text-celadon' : ''" />
-        <span>Private & Family Bespoke</span>
-        <Badge 
-          v-if="privateCount !== undefined" 
-          variant="outline"
-          class="ml-1 text-[11px] py-0 px-2 bg-paper-subtle"
+        <TabsTrigger 
+          value="private"
+          class="w-full sm:w-auto px-2.5 sm:px-5 py-2.5 rounded-sharp text-xs sm:text-sm font-medium transition-all flex items-center justify-center gap-1.5 text-center"
         >
-          {{ privateCount }}
-        </Badge>
-      </TabsTrigger>
-    </TabsList>
-  </Tabs>
+          <PhHouseLine :size="17" weight="light" class="shrink-0" :class="modelValue === 'private' ? 'text-celadon' : ''" />
+          <span class="hidden sm:inline">Private & Family Bespoke</span>
+          <span class="inline sm:hidden">Private ({{ privateCount }})</span>
+          <Badge 
+            v-if="privateCount !== undefined" 
+            variant="outline"
+            class="hidden sm:inline-flex ml-1 text-xs py-0 px-2 bg-paper-subtle"
+          >
+            {{ privateCount }}
+          </Badge>
+        </TabsTrigger>
+      </TabsList>
+    </Tabs>
+  </div>
 </template>

@@ -39,14 +39,14 @@ const nextBatch = computed(() => {
   >
     <div class="bg-paper-card/95 backdrop-blur-md border border-paper-border p-3 rounded-subtle shadow-elevated flex items-center justify-between gap-3">
       <div>
-        <div class="flex items-center gap-1 text-[11px] font-semibold text-terracotta">
-          <PhSparkle :size="12" weight="light" />
+        <div class="flex items-center gap-1 text-xs font-semibold text-terracotta">
+          <PhSparkle :size="13" weight="light" />
           <span v-if="nextBatch">{{ nextBatch.displayDates }}</span>
           <span v-else>Custom Dates</span>
         </div>
-        <div class="font-editorial text-sm font-bold text-stone-title">
-          {{ tour.priceIndication.currency }} ${{ tour.priceIndication.amount }}
-          <span class="text-[10px] font-sans font-normal text-stone-caption">/ pax</span>
+        <div class="font-editorial text-base font-bold text-stone-title flex items-baseline gap-1">
+          <span class="text-celadon font-bold">¥{{ tour.priceIndication.amount.toLocaleString() }}</span>
+          <span class="text-xs font-sans font-normal text-stone-caption">{{ tour.priceIndication.currency }} / pax</span>
         </div>
       </div>
 

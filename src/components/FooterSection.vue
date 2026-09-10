@@ -17,7 +17,7 @@ import { PhChatCircleDots, PhYoutubeLogo, PhMapPin, PhEnvelope } from '@phosphor
               <div class="font-editorial text-base font-semibold text-stone-title uppercase tracking-wider">
                 Mana Travel
               </div>
-              <div class="text-[10px] tracking-widest uppercase">
+              <div class="text-xs tracking-wider uppercase">
                 Sino-Islamic Cultural Expeditions
               </div>
             </div>
@@ -28,16 +28,16 @@ import { PhChatCircleDots, PhYoutubeLogo, PhMapPin, PhEnvelope } from '@phosphor
           </p>
 
           <div class="flex items-center gap-2 pt-1">
-            <span class="seal-stamp text-[10px]">VERIFIED SINO-ISLAMIC EXPEDITIONS</span>
+            <span class="seal-stamp text-xs">VERIFIED SINO-ISLAMIC EXPEDITIONS</span>
           </div>
         </div>
 
         <!-- Quick Links (3 cols) -->
         <div class="md:col-span-3 space-y-3">
-          <div class="font-semibold text-stone-title uppercase text-[11px] tracking-wider">
+          <div class="font-semibold text-stone-title uppercase text-xs tracking-wider">
             Navigation
           </div>
-          <ul class="space-y-2">
+          <ul class="space-y-2 text-xs">
             <li>
               <a href="#expeditions" class="hover:text-celadon transition-colors">Upcoming Departures</a>
             </li>
@@ -58,13 +58,13 @@ import { PhChatCircleDots, PhYoutubeLogo, PhMapPin, PhEnvelope } from '@phosphor
 
         <!-- Direct Host Contact (4 cols) -->
         <div class="md:col-span-4 space-y-3">
-          <div class="font-semibold text-stone-title uppercase text-[11px] tracking-wider">
+          <div class="font-semibold text-stone-title uppercase text-xs tracking-wider">
             Host Communication
           </div>
           <p class="text-xs leading-relaxed">
             Have questions regarding upcoming batches, visa exemptions, or bespoke family itineraries? Message brother Ma directly:
           </p>
-          <div class="space-y-2 pt-1">
+          <div class="space-y-2 pt-1 text-xs">
             <a 
               href="https://api.whatsapp.com/send?phone=8618487728484"
               target="_blank"
@@ -87,7 +87,7 @@ import { PhChatCircleDots, PhYoutubeLogo, PhMapPin, PhEnvelope } from '@phosphor
       </div>
 
       <!-- Legal & Ground Tour Disclaimer -->
-      <div class="pt-8 border-t border-paper-border flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px]">
+      <div class="pt-8 border-t border-paper-border flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
         <div>
           © {{ new Date().getFullYear() }} Mana Travel. All rights reserved. Ground Tour services hosted in Yunnan, China.
         </div>

@@ -9,7 +9,7 @@ import FooterSection from './components/FooterSection.vue';
     <SmartStickyHeader />
 
     <!-- Main Dynamic Route View -->
-    <main class="flex-grow">
+    <main class="flex-grow w-full max-w-full overflow-x-hidden">
       <router-view />
     </main>
 

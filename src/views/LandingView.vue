@@ -37,7 +37,7 @@ function closeModal() {
 </script>
 
 <template>
-  <div class="space-y-0">
+  <div class="space-y-0 max-w-full overflow-x-hidden">
     <!-- Hero Section -->
     <HeroSection />
 
@@ -63,7 +63,7 @@ function closeModal() {
           </div>
 
           <!-- Interactive Tour Switcher -->
-          <div>
+          <div class="w-full md:w-auto">
             <TourSwitcher 
               v-model="selectedTourType" 
               :scheduled-count="scheduledTours.length"
